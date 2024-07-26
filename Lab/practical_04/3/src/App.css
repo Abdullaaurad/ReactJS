@@ -1,0 +1,61 @@
+/* App.css */
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.form {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 300px; /* Adjust width as needed */
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form input {
+  width: calc(100% - 20px); /* Adjust width with padding */
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.form input:focus {
+  outline: none;
+  border-color: dodgerblue; /* Highlight border on focus */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.6); /* Light blue shadow on focus */
+}
+
+button {
+  background-color: lightblue;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 20px;
+  margin-top:10px;
+  align-items: center;
+}
+
+button:hover{
+  background-color: dodgerblue;
+}
+
+.message{
+  color: rgb(219, 24, 24);
+  margin-left: 70px;
+  margin-right: 70px;
+  background-color: palegreen;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
