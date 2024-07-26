@@ -1,0 +1,483 @@
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.home2 {
+  width: 100%;
+  height: 90vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home4 {
+  border: solid 4px black;
+  width: 100%;
+  height: 90vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 40px;
+}
+
+.headerContainer,
+.headerContainer2,
+.headerContainer3 {
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; 
+  margin-bottom: 40px;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+}
+
+.headerContainer4 {
+  width: 100%;
+  max-width: 90%; 
+  margin-bottom: 40px; 
+  text-align: center;
+  margin-top: 350px;
+}
+
+.Container5 {
+  width: 0%; 
+  max-width: 1200px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  color: #002855;
+  margin-bottom: 20px;
+}
+
+.headerContainer p {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.headerContainer2 {
+  margin-bottom: 40px; 
+  text-align: center; 
+}
+
+.inside1 {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.headerContainer2 h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px; 
+}
+
+.headerContainer2 p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.headerContainer4 h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 18px;
+}
+
+.headerContainer4 p {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 18px; 
+}
+
+.insideimage:hover {
+  background-color: lightgray;
+}
+
+.headerContainer button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    align-items: center;
+  }
+
+  .headerContainer {
+    width: 90%; 
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .headerContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .headerContainer p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .headerContainer button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}
+
+p {
+  color: #002855;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.inside {
+  color: white;
+  text-align: center;
+}
+
+.insideimage {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.insideimage:hover {
+  background-color: lightgray;
+}
+
+.inside2 {
+  color: black;
+  text-align: center;
+}
+
+.imagecontainer {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin: 0 auto;
+}
+
+.i {
+  width: 30%; 
+  height: auto;
+  margin: 10px; 
+}
+
+.how {
+  color: #002855;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.BSI_logo h1 {
+  margin-top: 50px;
+  color: #002855;
+}
+
+.BSI_logo p {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.lol {
+  color: #002855;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.life {
+  text-align: center;
+  font-size: 18;
+  margin-bottom: 20px;
+}
+
+.value {
+  color: white;
+  font-size: 50px;
+}
+
+.paragraphs {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.leftparagraph, .rightparagraph {
+  flex: 1;
+}
+
+.leftparagraph {
+  margin-right: 90px;
+}
+
+@media (max-width: 768px) {
+  .paragraphs {
+    flex-direction: column; 
+  }
+
+  .leftparagraph, .rightparagraph {
+    width: 100%; 
+  }
+}
+
+.say {
+  font-size: 22px;
+}
+
+/* Default styles for smaller screens */
+.latestnews {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #002855;
+}
+
+.newscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news {
+  display: flex;
+  justify-content: center; /* Center the news container */
+  flex-direction: column; /* Default to column layout */
+  align-items: center;
+  width: 100%;
+}
+
+.news-item {
+  width: auto; /* Adjust width to give some padding/margin */
+  margin-bottom: 20px; /* Ensure spacing between stacked items */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.news-image {
+  width: 400px; /* Ensure image takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image covers the specified area while maintaining aspect ratio */
+}
+
+.news-date {
+  background: #f7f7f7;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.news-title {
+  padding: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  .newscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    justify-content: space-between; /* Space items out */
+    width: 80%; /* Width for the row container */
+    margin-bottom: 20px; /* Ensure spacing between rows */
+    margin-right: 50px;
+  }
+
+  .news-item {
+    width: auto; /* Adjust width for side-by-side layout */
+    margin-bottom: 0; /* Remove bottom margin for row items */
+  }
+
+  .news-image {
+    align-items: center;
+    width: 400px; /* Ensure image takes the full width of its container */
+    height: 300px; /* Maintain aspect ratio */
+  }
+
+  .news-date {
+    padding: 10px;
+  }
+
+  .news-title {
+    padding: 20px;
+  }
+}
+
+.We_value {
+  color: white;
+  font-size: 40px;
+}
+
+.certified {
+  color: #002855;
+  font-size: 35px;
+  margin-bottom: -3%;
+}
+
+.We {
+  text-align: center;
+}
+
+body.dark {
+  background-color: #121212; /* Dark background color */
+  color: white; /* Text color in dark mode */
+}
+
+.home-container .dark {
+  color: black;
+}
+
+body.dark {
+  color: black;
+}
+
+body.dark .headerContainer2 h1,
+body.dark .headerContainer4 h1 {
+  color: black;
+}
+
+body.dark .headerContainer3 h1,
+body.dark .headerContainer3 p {
+  color: white;
+}
+
+body.dark .headerContainer2 p.inside1 {
+  color: black;
+}
+
+.inside1.dark {
+  color: black;
+}
+
+.headerContainer h1 {
+  margin-top: 20px;
+  color: black;
+}
+
+.headerContainer h1.dark {
+  margin-top: 20px;
+  color: white;
+}
+
+body.dark .headerContainer p {
+  color: white;
+}
+
+body.dark .headerContainer4 p {
+  color: black;
+}
+
+body.dark .inside2 {
+  color: black;
+}
+
+body.dark .BSI_logo h1,
+body.dark .BSI_logo p {
+  color: #ccc;
+}
+
+body.dark .lol {
+  color: #ccc;
+}
+
+body.dark .life {
+  color: #ccc;
+}
+
+body.dark .news-date {
+  background: #333;
+  color: #ccc;
+}
+
+body.dark .news-title {
+  color: #ccc;
+}
+
+body.dark .news-item {
+  background: #222;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+
+.inside2.dark {
+  color: black;
+}
+
+.headerContainer3 h1.dark {
+  color: white;
+}
+
+.latestnews.dark {
+  color: white;
+}
+
+body.dark .latestnews {
+  color: white;
+}

@@ -1,0 +1,81 @@
+body{
+  overflow-x: hidden;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .menuTitle {
+  font-family: cursive;
+  font-size: 60px;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.menuItem {
+  border-radius: 15px;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  box-shadow: 4px 4px 20px rgba(2, 2, 2, 0.2);
+}
+.menuItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.menuItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outside{
+  color: #002855;
+  font-size: 40px;
+  font-family: 'Pacifico';
+}
+
+h1{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: #002855;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.dark .outside{
+  color: white;
+}
+
+body.dark .Items{
+  background-color: white;
+  color: white;
+}

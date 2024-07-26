@@ -1,0 +1,271 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.aboutTop {
+  position: relative; /* Ensure relative positioning for absolute child */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Also make it relative for absolute child */
+}
+
+.container {
+  position: absolute; 
+  top: 60%;  
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1; 
+}
+
+.container p {
+  text-align: center;
+  color: white;
+}
+
+.container h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.aboutBottom {
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-top: 20px;
+}
+
+.aboutBottom h2 {
+  margin-top: 10px;
+  text-align: left;
+  color: #002855; 
+  font-size: 30px;
+}
+
+.aboutBottom p {
+  margin-top: 0%;
+  margin-bottom: 30px;
+  width: 80%;
+  color: #002855;
+  font-size: 18px
+}
+
+iframe{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.list h4{
+  color:#002855;
+}
+
+.left,
+.middle,
+.right {
+  flex: 1 1 300px;
+  text-align: center; 
+  padding: 20px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left p,
+.middle p,
+.right p {
+  text-align: justify; 
+  color: #555;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.k {
+  width: 90%;
+  height: 90%;
+  height: auto;
+}
+
+.value{
+  margin-top: 10px;
+  text-align: left;
+  color: #002855; 
+  font-size: 30px;
+  margin-bottom: 0%;
+}
+
+.TeamMember {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.leftPerson,
+.middlePerson,
+.rightPerson {
+  width: 250px;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+  border: solid 2px black;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adjust as needed */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.person {
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Adjust image height as needed */
+  border-radius: 50%; /* Optional: Rounded images */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.Description {
+  text-align: center;
+  color: black;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens (tablet and below) */
+  .leftPerson,
+  .middlePerson,
+  .rightPerson {
+    width: 150px; /* Adjust back to smaller size for tablets */
+    padding: 20px; /* Adjust padding back to smaller size */
+  }
+
+  .person {
+    width: 100px; /* Adjust image size for tablets */
+    height: 100px; /* Adjust image size for tablets */
+  }
+
+  .Description {
+    font-size: 14px; /* Adjust font size for descriptions on tablets */
+  }
+
+  h3 {
+    font-size: 16px; /* Adjust font size for headings on tablets */
+  }
+}
+
+.dark .container p,
+.dark .container h1,
+.dark .aboutBottom h2,
+.dark .aboutBottom p,
+.dark .list h4,
+.dark .left p,
+.dark .middle p,
+.dark .right p,
+.dark .value,
+.dark .Description
+{
+  color: white;
+}
+
+.dark .leftPerson,
+.dark .rightPerson,
+.dark .middlePerson{
+  color: black;
+  background-color: white;
+}
+
+.dark .Description{
+  color: black;
+}
+
+.dark .aboutTop {
+  background-color: #121212; /* Dark background color for aboutTop section */
+}
+
+.dark .aboutBottom {
+  background-color: #1f1f1f; /* Dark background color for aboutBottom section */
+}
+
+
+.navigation {
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 999; /* Ensure it's above other content */
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  margin-bottom: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #002855;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #0056b3;
+}
+
+.navigation-toggle {
+  position: absolute;
+  top: 20px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navigation-toggle:hover {
+  color: #f0f0f0;
+}
+
+.value{
+  text-align: center;
+}
